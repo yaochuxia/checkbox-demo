@@ -36,3 +36,16 @@ label{
     display: inline-block;
     position: relative;
 }
+
+.regular_checkbox + label:active, .regular_checkbox:checked + label:active{
+    box-shadow:  0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+.regular_checkbox:checked + label:after{
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: #99a1a7;
+}
