@@ -114,3 +114,17 @@ label{
     left: 4px;
     top: 4px;
 }
+
+[id^="checkbox-3-"] + label:after{
+    position: absolute;
+    top: 90px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    content: "'\2715'";
+    color: #947975;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding:1px 0 0;
+    left: 0;
+}
